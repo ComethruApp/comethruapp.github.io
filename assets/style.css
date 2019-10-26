@@ -188,10 +188,9 @@ body{background-color:#10171e;}
 .StaticLoggedOutHomePage{height:100%;}
 }
 
-.row {
+.buttons {
     margin-top: 18px;
 }
-.row > * {
-    display: inline-block;
-    height: 50px;
+.buttons img {
+    height: 60px;
 }
