@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="assets/style.css">
     <title>ComeThru App</title>
     <meta name="description" content="">
+    <link rel="shortcut icon" href="assets/logo/icon.png" />
   </head>
   <body class="three-col ms-windows static-logged-out-home-page">    
     <div class="StaticLoggedOutHomePage">
@@ -14,11 +15,19 @@
                     <div class="StaticLoggedOutHomePage-signupHeader">
                         <img src="assets/logo/logo_transparent.png?raw=true" height="70%" width="70%">
                     </div>
-                    <h1 class="StaticLoggedOutHomePage-signupTitle">See what the move is on campus right now</h1>
-                    <div class="StaticLoggedOutHomePage-noSignupForm">
-                        <h2 class="StaticLoggedOutHomePage-signupSubtitle">Start making moves today.</h2>
+                    <h1 class="StaticLoggedOutHomePage-signupTitle">Find/list  parties that are happening on campus</h1>
+                        <div class="StaticLoggedOutHomePage-noSignupForm">
+                        <h2 class="StaticLoggedOutHomePage-signupSubtitle"></h2><div id="particles-js"></div>
+                        <br><br>   
+                        <div class="error-page">
+                          <div> 
+                              <h1 data-h1="Make a move">Make a move:</h1>
+                          </div>
+                        </div>
+                        <div id="particles-js"></div>
+                        <br>
                         <div class="StaticLoggedOutHomePage-buttons">
-                            <a class="js-nav EdgeButton EdgeButton--medium EdgeButton--primary StaticLoggedOutHomePage-buttonSignup" href="">
+                            <a class="js-nav EdgeButton EdgeButton--medium EdgeButton--primary StaticLoggedOutHomePage-buttonSignup" href="javascript:void(0)">
                                 Download
                             </a>
                         </div>
@@ -57,11 +66,75 @@
 </div>
       
       
-      
-      
-      
-      
-      
+<script>
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 5,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#fcfcfc"
+    },
+    "shape": {
+      "type": "circle",
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.2,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 140,
+      "random": false,
+      "anim": {
+        "enable": true,
+        "speed": 10,
+        "size_min": 40,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": false,
+    },
+    "move": {
+      "enable": true,
+      "speed": 8,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+    "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": false
+      },
+      "onclick": {
+        "enable": false
+      },
+      "resize": true
+    }
+  },
+  "retina_detect": true
+});         
+</script>     
       
 </body>
 </html>
