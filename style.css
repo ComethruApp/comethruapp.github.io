@@ -11,6 +11,8 @@ body{
     font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
     position:relative;
 }
+.show-on-mobile {display: none;}
+.phone-display {padding-left: 7em;}
 @media screen and (-webkit-min-device-pixel-ratio:2),screen and (min-resolution:2dppx){
 body{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;}
 }
@@ -37,10 +39,10 @@ body{background-color:#10171e;}
 .EdgeButton,.EdgeButton:visited{border-radius:100px;box-shadow:none;cursor:pointer;font-size:14px;font-weight:bold;line-height:20px;padding:6px 16px;position:relative;text-align:center;white-space:nowrap;}
 .EdgeButton:active,.EdgeButton:focus,.EdgeButton:hover{text-decoration:none;}
 .EdgeButton--medium{font-size:14px;line-height:20px;padding:6px 16px;}
-.EdgeButton--primary{background-color:#1da1f2;border:1px solid #1da1f2;color:#fff;}
+.EdgeButton--primary{background-color:#1d306d;border:1px solid #1d306d;color:#fff;}
 .EdgeButton--primary:hover{background-color:#006dbf;border-color:#006dbf;color:#fff;}
-.EdgeButton--primary:focus{border-color:#1da1f2;box-shadow:0 0 0 2px #15202b,0 0 0 4px #71c9f8;color:#fff;}
-.EdgeButton--primary:active{background-color:#006dbf;border-color:#006dbf;box-shadow:0 0 0 2px #15202b,0 0 0 4px #1da1f2;color:#fff;}
+.EdgeButton--primary:focus{border-color:#1d306d;box-shadow:0 0 0 2px #15202b,0 0 0 4px #71c9f8;color:#fff;}
+.EdgeButton--primary:active{background-color:#006dbf;border-color:#006dbf;box-shadow:0 0 0 2px #15202b,0 0 0 4px #1d306d;color:#fff;}
 .StreamsFooter{border-top:1px solid #10171e;padding:11px 0;position:fixed;background-color:#15202b;bottom:-10%;width:100%;z-index:2;}
 .StreamsFooter--fixed{width:100%;bottom:0;}
 .StreamsFooter-list{margin:0 auto;text-align:center;width:890px;}
@@ -59,7 +61,7 @@ body{background-color:#10171e;}
     justify-content:center;
     position:relative;
 }
-.StaticLoggedOutHomePage-communicationBlock{background:#1da1f2;overflow:hidden;position:relative;}
+.StaticLoggedOutHomePage-communicationBlock{background:#1d306d;overflow:hidden;position:relative;}
 .StaticLoggedOutHomePage-communicationContent{color:#fff;max-width:440px;padding:0 16px;position:relative;}
 .StaticLoggedOutHomePage-communicationItem{display:-moz-box;display:-ms-flexbox;display:flex;font-size:18px;font-weight:bold;line-height:24px;margin:48px auto;}
 .StaticLoggedOutHomePage-communicationItem .Icon{font-size:35px;margin-right:16px;}
@@ -73,6 +75,8 @@ body{background-color:#10171e;}
 .StaticLoggedOutHomePage .StreamsFooter-list{background:#15202b;display:-moz-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;width:auto;}
 @media only screen and (max-width:800px){
 .StaticLoggedOutHomePage-content{display:block;height:100%;}
+.phone-display {display: none;}
+.show-on-mobile {display: block;}
 .StaticLoggedOutHomePage-communicationBlock{-moz-box-align:center;-ms-flex-align:center;align-items:center;display:-moz-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-bottom:0;padding-top:0;}
 }
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active){
