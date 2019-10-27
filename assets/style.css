@@ -1,5 +1,5 @@
 html{font-family:sans-serif;}
-
+/*
 .error-page {
 
 }
@@ -17,7 +17,6 @@ html{font-family:sans-serif;}
   left: 0;
   right: 0;
   color: transparent;
-  /* webkit only for graceful degradation to IE */
   background: -webkit-repeating-linear-gradient(-45deg, #71b7e6, #69a6ce, #b98acc, #ee8176, #b98acc, #69a6ce, #9b59b6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -98,7 +97,7 @@ a.back {
 }
 a.back:hover {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-}
+}*/
 body{
     margin:0;
     font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
