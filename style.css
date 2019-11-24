@@ -1,7 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #15202b;
+    color: white;
+    font-family: sans-serif;
+}
 
+.columns {
 
+}
+.column {
+    display: inline-block;
+    width: 100%;
+}
+
+.column.previews {
+
+}
+.column.previews img {
+    width: 300px;
+}
+
+.logo {
+    height: 140px;
+}
 .download-buttons {
 }
 .download-buttons .download-button {
-    max-width: 3in;
+}
+.download-buttons .download-button img {
+    width: 300px
+}
+
+@media (min-width: 800px) {
+    .column {
+        width: 50%;
+    }
 }
