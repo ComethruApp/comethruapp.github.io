@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Big John';
-    src: url(fonts/BigJohnPro-Bold.otf) format('opentype');
+    src: url('fonts/BigJohnPro-Bold.otf') format('opentype');
 }
 
 * {
