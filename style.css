@@ -10,33 +10,49 @@ body {
 }
 
 .columns {
-
+    white-space: nowrap;
 }
 .column {
+    white-space: normal;
     display: inline-block;
     width: 100%;
+    padding: 30px;
+    vertical-align: top;
 }
 
 .column.previews {
-
+    background: #00356b;
 }
 .column.previews img {
     width: 300px;
 }
 
 .logo {
-    height: 140px;
+    max-width: 500px;
 }
 .download-buttons {
+    margin-top: 10px;
 }
 .download-buttons .download-button {
+    display: block;
 }
 .download-buttons .download-button img {
-    width: 300px
+    width: 200px;
+}
+
+footer {
+    margin-top: 10px;
+    color: #888;
 }
 
 @media (min-width: 800px) {
     .column {
-        width: 50%;
+        height: 100vh;
+    }
+    .column.previews {
+        width: 30%;
+    }
+    .column.info {
+        padding-top: 15%;
     }
 }
