@@ -22,9 +22,15 @@ body {
 
 .column.previews {
     background: #00356b;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .column.previews img {
-    width: 300px;
+    height: 500px;
+    margin: 10px;
+    display: inline-block;
 }
 
 .logo {
@@ -50,7 +56,7 @@ footer {
         height: 100vh;
     }
     .column.previews {
-        width: 30%;
+        width: 50%;
     }
     .column.info {
         padding-top: 15%;
