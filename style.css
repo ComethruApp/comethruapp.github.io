@@ -8,29 +8,34 @@ body {
     color: white;
     font-family: sans-serif;
 }
+a {
+    color: inherit;
+}
 
 .columns {
     white-space: nowrap;
 }
 .column {
     white-space: normal;
-    display: inline-block;
     width: 100%;
     padding: 30px;
     vertical-align: top;
+    display: inline-flex;
+    justify-content: center;
 }
 
 .column.previews {
     background: #00356b;
-    display: inline-flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
 }
 .column.previews img {
     height: 500px;
     margin: 10px;
     display: inline-block;
+}
+.column.info {
+    flex-direction: column;
 }
 
 .logo {
@@ -56,9 +61,9 @@ footer {
         height: 100vh;
     }
     .column.previews {
-        width: 50%;
+        width: 45%;
     }
     .column.info {
-        padding-top: 15%;
+        width: 50%;
     }
 }
