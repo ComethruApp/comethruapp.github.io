@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Big John';
-    src: url(fonts/BigJohnPRO-Bold.otf) format('opentype');
+    src: url(fonts/BigJohnPRO-Regular.otf) format('opentype');
 }
 
 * {
@@ -44,12 +44,23 @@ a {
     height: 500px;
     margin: 10px;
     display: inline-block;
+    animation: up 2s ease-out;
+}
+@keyframes up {
+    0% { transform: translateY(100vh); }
+    40% { transform: translateY(100vh); }
+    100% { transform: translateY(0); }
 }
 
 .logo {
     margin-left: -10px;
     width: 500px;
     max-width: 90vw;
+    animation: over 1s ease-out;
+}
+@keyframes over {
+    from { transform: translateX(-100vw); }
+    to   { transform: translateX(0); }
 }
 .download-buttons {
     margin-top: 10px;
@@ -60,6 +71,15 @@ a {
 .download-buttons .download-button img {
     width: 200px;
 }
+h1, .download-buttons {
+    animation: 3s fade;
+}
+@keyframes fade {
+    0% { opacity: 0; }
+    60% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
 
 footer {
     padding: 20px;
