@@ -62,8 +62,11 @@ a {
     from { transform: translateX(-100vw); }
     to   { transform: translateX(0); }
 }
+h1 {
+    margin-bottom: 5px;
+}
 .download-buttons {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 .download-buttons .download-button {
     text-decoration: none;
