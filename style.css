@@ -63,6 +63,7 @@ a {
     to   { transform: translateX(0); }
 }
 h1 {
+    font-style: italic;
     margin-bottom: 5px;
 }
 .download-buttons {
