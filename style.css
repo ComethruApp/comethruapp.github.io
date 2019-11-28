@@ -1,6 +1,7 @@
 @font-face {
-    font-family: 'Big John';
-    src: url(fonts/BigJohnPRO-Regular.otf) format('opentype');
+    font-family: 'Josefin Sans';
+    font-style: italic;
+    src: url(fonts/JosefinSans-Italic.ttf) format('truetype');
 }
 
 * {
@@ -11,7 +12,7 @@
 body {
     background: #15202b;
     color: white;
-    font-family: 'Big John', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     text-align: center;
 }
 a {
@@ -64,7 +65,7 @@ a {
 }
 h1 {
     font-style: italic;
-    margin-bottom: 5px;
+    margin-top: 5px;
 }
 .download-buttons {
     margin-top: 15px;
