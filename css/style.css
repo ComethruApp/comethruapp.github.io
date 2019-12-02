@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Josefin Sans';
     font-style: italic;
-    src: url(fonts/JosefinSans-Italic.ttf) format('truetype');
+    src: url(../fonts/JosefinSans-Italic.ttf) format('truetype');
 }
 
 * {
