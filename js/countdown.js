@@ -1,11 +1,12 @@
 var events = [
 	{
 	    name: 'Comethru Launch',
-		date: new Date(2020, 7, 12, 0, 0),
+		date: new Date(2020, 0, 7, 0, 0),
 	},
 ];
 
 var clock = {
+    countdown: document.getElementById('countdown'),
 	title: document.getElementById('title'),
 	d: document.getElementById('days'),
 	hr: document.getElementById('hours'),
@@ -17,13 +18,12 @@ var clock = {
 // variables for time units
 var days, hours, minutes, seconds;
 
-// Update countdown every 100ms (.1s)
-setInterval(function() {
+function loop() {
 	// Find the amount of seconds between now and target
 	var now = new Date().getTime();
 	var secondsLeft = (events[0].date - now) / 1000;
 	if (now > events[0].date) {
-		secondsLeft = 0;
+        clear();
 	}
 
 	// Calculate times left
@@ -46,5 +46,13 @@ setInterval(function() {
 	clock.hr.textContent = hours;
 	clock.min.textContent = minutes;
 	clock.s.textContent = seconds;
-}, 100);
+}
 
+// Update countdown every 100ms (.1s)
+var interval = setInterval(loop, 100);
+loop();
+
+function clear() {
+    clock.countdown.parentNode.removeChild(clock.countdown);
+    clearInterval(interval);
+}
