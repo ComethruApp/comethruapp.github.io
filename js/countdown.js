@@ -1,6 +1,6 @@
 var events = [
 	{
-	    name: 'Comethru Launch',
+	    name: 'Launch',
 		date: new Date(2020, 0, 7, 0, 0),
 	},
 ];
@@ -41,7 +41,7 @@ function loop() {
 	if (seconds.toString().length < 2) seconds = '0' + seconds.toString();
 
 	// Display times left
-	clock.title.textContent = 'Time left until ' + events[0].name + ':';
+	clock.title.textContent = events[0].name + ':';
 	clock.d.textContent = days;
 	clock.hr.textContent = hours;
 	clock.min.textContent = minutes;
