@@ -1,0 +1,13 @@
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    max-width: 8in;
+    padding: 30px;
+}
