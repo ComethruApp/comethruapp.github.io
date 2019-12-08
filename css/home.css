@@ -19,7 +19,7 @@
     align-items: center;
     overflow: hidden;
 }
-.column.previews img {
+.column.previews .preview img {
     height: 500px;
     margin: 10px;
     display: inline-block;
