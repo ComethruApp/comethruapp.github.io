@@ -19,11 +19,27 @@
     align-items: center;
     overflow: hidden;
 }
-.column.previews .preview img {
+.column.previews .preview {
     height: 500px;
     margin: 10px;
-    display: inline-block;
     animation: up 2s ease-out;
+}
+.column.previews .preview img.frame {
+    position: relative;
+    top: 0;
+    height: 100%;
+}
+.column.previews .preview img.screenshot {
+    position: relative;
+    z-index: -1;
+}
+.column.previews .preview.iphone_x img.screenshot {
+    height: 470px;
+    top: -491px;
+}
+.column.previews .preview.pixel img.screenshot {
+    height: 384px;
+    top: -469px;
 }
 @keyframes up {
     0% { transform: translateY(100vh); }
