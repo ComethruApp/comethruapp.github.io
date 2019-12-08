@@ -20,9 +20,9 @@ function getOS() {
 
 let os = getOS();
 if (os === "Android") {
-    window.location.replace("/android");
+    window.location.replace("https://play.google.com/store/apps/details?id=com.erikboesen.comethru");
 } else if (os === "iOS") {
-    window.location.replace("/ios");
+    window.location.replace("/");
 } else {
     window.location.replace("/");
 }
