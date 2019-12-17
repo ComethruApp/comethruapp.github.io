@@ -1,0 +1,15 @@
+body {
+    line-height: 1.5;
+}
+ul, ol {
+    margin-left: 40px;
+}
+h2, h3 {
+    margin-top: 20px;
+}
+
+@media (min-width: 800px) {
+    body {
+        padding: 40px;
+    }
+}
