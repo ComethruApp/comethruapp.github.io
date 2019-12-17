@@ -1,5 +1,10 @@
 @font-face {
     font-family: 'Josefin Sans';
+    font-style: normal;
+    src: url(../fonts/JosefinSans-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Josefin Sans';
     font-style: italic;
     src: url(../fonts/JosefinSans-Italic.ttf) format('truetype');
 }
