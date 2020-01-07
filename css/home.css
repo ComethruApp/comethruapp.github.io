@@ -52,10 +52,10 @@ body {
 }
 
 .logo {
-    margin-left: -10px;
     width: 500px;
     max-width: 90vw;
     animation: over 1s ease-out;
+    margin-bottom: 15px;
 }
 @keyframes over {
     from { transform: translateX(-100vw); }
