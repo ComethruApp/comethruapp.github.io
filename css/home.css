@@ -42,7 +42,7 @@ body {
     top: -491px;
 }
 .column.previews .preview.pixel img.screenshot {
-    height: 384px;
+    width: 216px;
     top: -469px;
 }
 @keyframes up {
